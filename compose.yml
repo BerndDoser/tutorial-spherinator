@@ -1,0 +1,10 @@
+services:
+  jupyter:
+    image: quay.io/jupyter/pytorch-notebook
+    container_name: tutorial-spherinator
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./jupyter:/home/jovyan/work
+    environment:
+      JUPYTER_TOKEN: spherinator
