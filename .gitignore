@@ -1,10 +1,8 @@
-# Python-generated files
 __pycache__/
+.venv
+*.egg-info
 *.py[oc]
 build/
 dist/
+jupyter/lightning_logs/
 wheels/
-*.egg-info
-
-# Virtual environments
-.venv
