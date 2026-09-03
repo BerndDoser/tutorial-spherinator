@@ -4,6 +4,8 @@ services:
     container_name: tutorial-spherinator
     ports:
       - "8888:8888"
+      # HTTP server for the HiPS tiles, so Aladin Lite can reach them
+      - "8083:8083"
     volumes:
       - ./jupyter:/home/jovyan/work
     environment:

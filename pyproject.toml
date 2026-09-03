@@ -5,11 +5,19 @@ description = "Tutorial for Spherinator"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    # Not "astro-hipster[cuda]": that extra adds onnxruntime-gpu, which installs
+    # into the same "onnxruntime" package directory as the CPU wheel the base
+    # dependencies require, and the two shadow each other. The CPU wheel is
+    # enough here - ONNX inference only runs the small encoder and decoder,
+    # while training uses torch on the GPU.
+    "astro-hipster",
+    "ipyaladin>=0.8",
     "ipykernel>=7.3.0",
     "spherinator",
 ]
 
 [tool.uv.sources]
+astro-hipster = { git = "https://github.com/HITS-AIN/HiPSter.git" }
 spherinator = { git = "https://github.com/HITS-AIN/Spherinator.git"}
 
 [tool.uv]

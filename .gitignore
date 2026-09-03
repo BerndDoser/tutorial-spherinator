@@ -5,4 +5,5 @@ __pycache__/
 build/
 dist/
 jupyter/lightning_logs/
+jupyter/output/
 wheels/
