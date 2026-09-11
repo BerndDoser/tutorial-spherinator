@@ -1,4 +1,4 @@
-# Tutorial Spherinator
+# Tutorial Spherinator & HiPSter
 
 An end-to-end walkthrough of [Spherinator](https://github.com/HITS-AIN/Spherinator)
 and [HiPSter](https://github.com/HITS-AIN/HiPSter) in a single notebook,
