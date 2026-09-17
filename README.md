@@ -31,6 +31,11 @@ The two notebooks are independent: run either on its own, or run the training
 notebook first and point the inference notebook at its ONNX output instead of
 the Hugging Face download.
 
+## Run on Google Colab
+
+- [`emojis_training.ipynb`](https://colab.research.google.com/github/BerndDoser/Tutorial-Spherinator/blob/master/jupyter/emojis_training.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BerndDoser/Tutorial-Spherinator/blob/master/jupyter/emojis_training.ipynb)
+- [`emojis_inference.ipynb`](https://colab.research.google.com/github/BerndDoser/Tutorial-Spherinator/blob/master/jupyter/emojis_inference.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BerndDoser/Tutorial-Spherinator/blob/master/jupyter/emojis_inference.ipynb)
+
 
 ## Jupyter with Docker Compose
 
