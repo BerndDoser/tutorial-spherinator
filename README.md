@@ -18,23 +18,16 @@ and [HiPSter](https://github.com/HITS-AIN/HiPSter) on the
 
 ## Notebooks
 
-- [`emojis_training.ipynb`](jupyter/emojis_training.ipynb) — steps 1-3 above.
-  Trains a quick demo model (under two minutes on a laptop GPU) and exports it
-  to ONNX.
-- [`emojis_inference.ipynb`](jupyter/emojis_inference.ipynb) — steps 4-5.
-  Downloads a more thoroughly trained production model from Hugging Face
-  ([`bernddoser/emoji`](https://huggingface.co/bernddoser/emoji)) instead of
-  reading the output of the training notebook, then generates and serves the
-  tiling.
+- [`emojis_training.ipynb`](jupyter/emojis_training.ipynb)
+  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BerndDoser/Tutorial-Spherinator/blob/master/jupyter/emojis_training.ipynb)
+  Trains a quick demo model (under two minutes on a laptop GPU) and exports it to ONNX.
+- [`emojis_inference.ipynb`](jupyter/emojis_inference.ipynb)
+  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BerndDoser/Tutorial-Spherinator/blob/master/jupyter/emojis_inference.ipynb)  
+  Downloads a more thoroughly trained production model from Hugging Face ([`bernddoser/emoji`](https://huggingface.co/bernddoser/emoji)) instead of reading the output of the training notebook, then generates and serves the tiling.
 
 The two notebooks are independent: run either on its own, or run the training
 notebook first and point the inference notebook at its ONNX output instead of
 the Hugging Face download.
-
-## Run on Google Colab
-
-- [`emojis_training.ipynb`](https://colab.research.google.com/github/BerndDoser/Tutorial-Spherinator/blob/master/jupyter/emojis_training.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BerndDoser/Tutorial-Spherinator/blob/master/jupyter/emojis_training.ipynb)
-- [`emojis_inference.ipynb`](https://colab.research.google.com/github/BerndDoser/Tutorial-Spherinator/blob/master/jupyter/emojis_inference.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/BerndDoser/Tutorial-Spherinator/blob/master/jupyter/emojis_inference.ipynb)
 
 
 ## Jupyter with Docker Compose
