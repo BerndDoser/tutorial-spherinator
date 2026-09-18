@@ -13,6 +13,7 @@ dependencies = [
     "astro-hipster",
     "ipyaladin>=0.8",
     "ipykernel>=7.3.0",
+    "onnxruntime>=1.30.0",
     "spherinator",
 ]
 
